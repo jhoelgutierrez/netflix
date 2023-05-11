@@ -1,0 +1,574 @@
+:root{
+    --rojoPrincipal: #d4212a;
+    --rojoSuavePrincipal:#f6cbcc;
+    --azulSecundario: #1f7a8c;
+    --azulSuaveSecundario: #abe2ed;
+    --casiNegro: #20201d;
+    --negro: #151513;
+    --gris: #6b6b61;
+    --casiBlanco: #e2e2df;
+    --blanco: #f5f5f4;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    background: linear-gradient(207.8deg, #201E1C 16.69%,#e31e27 100%);
+}
+
+header img{
+    margin-top: 30px;
+    width: 130px;
+    height: 64px;
+}
+
+.header--title-container{
+    width: 90%;
+    min-width: 300px;
+    max-width: 900px;
+    height: 218px;
+    margin: 30px;
+}
+
+.header--title-container h1{
+    color: var(--blanco);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;  
+}
+
+.header--title-container p{
+    color: var(--rojoSuavePrincipal);
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+.header--title-container .header--button{
+    background-color: var(--casiBlanco);
+    color: var(--negro);
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: block;
+    width: 270px;
+    height: 40px;
+    position: absolute;
+    top: 315px;
+    left: calc(50% - 135px);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.header--button span{
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    background-image: url('./assets/iconos/expand_more_black_24dp.svg');
+}
+
+/* main*/
+
+main{
+    width: 100%;
+    height: auto;
+    background: var(--casiBlanco);
+    
+}
+
+.main--top5-container{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main--top5-container .backgroundImg{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('./assets/imagenes/entradasnetflix.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main--top5-container-title{
+    width: 90%;
+    min-width: 280px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main--top5-container-title h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--negro);
+}
+
+.main--top5-container-title p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--casiNegro);
+}
+
+.main--tables-container{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 0 60px;
+}
+/* -------------Estilos para tabla series-------*/
+.table-container-series{
+    width: 100%;
+    min-width: 280px;
+    max-width: 500px;
+    height: 330px;
+    margin:0 30px;
+
+    font-family: "inter", sans-serif;
+    scroll-snap-align: center;
+}
+.table-container-series .table-title-series{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--rojoPrincipal);
+    margin-bottom: 15px;
+}
+.table-series{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 240px;
+    margin: 0 auto;
+}
+
+.table-series table{
+    width: 100%;
+    height: 100%;
+}
+
+.table-series table td{
+    width: 50%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.9rem;
+    color: var(--gris);
+    background-color: var(--blanco);
+}
+
+.table__top-left{
+    border-radius: 15px 0 0 0;
+}
+.table__top-right{
+    border-radius: 0 15px 0 0;
+}
+.table__bottom-left{
+    border-radius: 0 0 0 15px;
+}
+.table__bottom-right{
+    border-radius: 0 0 15px 0;
+}
+.table-series .table__right{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    color: var(--gris);
+}
+
+.table-series .up{
+    display: inline-block;
+    background-image: url('./assets/iconos/up.png');
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.table-series .down{
+    display: inline-block;
+    background-image: url('./assets/iconos/down.png');
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.table-actualizado-series{
+    width: 220px;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--rojoSuavePrincipal);
+    border-radius: 8px;
+}
+.table-actualizado-series p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--negro);
+}
+/* ---------Estilos para tabla peliculas-----------*/
+.table-container-peliculas{
+    width: 100%;
+    min-width: 280px;
+    max-width: 500px;
+    height: 330px;
+    margin: 0 30px;
+    font-family: "inter", sans-serif;
+    scroll-snap-align: center;
+}
+.table-container-peliculas .table-title-peliculas{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--azulSecundario);
+    margin-bottom: 15px;
+}
+.table-peliculas{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 240px;
+    margin: 0 auto;
+}
+
+.table-peliculas table{
+    width: 100%;
+    height: 100%;
+}
+
+.table-peliculas table td{
+    width: 50%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.9rem;
+    color: var(--gris);
+    background-color: var(--blanco);
+}
+
+.table__top-left{
+    border-radius: 15px 0 0 0;
+}
+.table__top-right{
+    border-radius: 0 15px 0 0;
+}
+.table__bottom-left{
+    border-radius: 0 0 0 15px;
+}
+.table__bottom-right{
+    border-radius: 0 0 15px 0;
+}
+.table-peliculas .table__right{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    color: var(--gris);
+}
+
+.table-peliculas .up{
+    display: inline-block;
+    background-image: url('./assets/iconos/up.png');
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.table-peliculas .down{
+    display: inline-block;
+    background-image: url('./assets/iconos/down.png');
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.table-actualizado-peliculas{
+    width: 220px;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--azulSuaveSecundario);
+    border-radius: 8px;
+}
+.table-actualizado-peliculas p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--negro);
+}
+
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--negro);
+}
+.producto-detail-logo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -18px;
+    left: calc(50% - 20px);
+    background-image: url('./assets/imagenes/logo.png');
+    background-size: cover;
+}
+.product-detail-title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.product-detail-title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color:var(--casiBlanco)
+}
+.product-detail-title p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--gris);
+}
+
+.product-detail--card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--casiNegro);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product-detail--card .img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.product--card-title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--blanco);
+}
+.product--card-body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--gris);
+}
+.netflix-img-container{
+    width: 100%;
+    min-width: 320px;
+    height: 50Vh;
+    background-image: url('./assets/imagenes/fondonetflix.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ .netflix-img-container div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.5);
+ }
+.netflix-img-container h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--blanco);
+    text-align: center;
+    
+}
+/* estilos planes*/
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.plans-title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.plans-title h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--negro);
+
+}
+.plans-title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--gris);
+}
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 0 30px;
+    
+}
+.plans-container--card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 50%;
+    min-width: 230px;
+    max-width: 300px;
+    min-height: 260px;
+    margin: 20px 20px 0;
+    background-color: var(--blanco);
+    padding: 0 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.recomended{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    background-color: var(--rojoPrincipal);
+    border-radius: 8px;
+    color: var(--blanco);
+    left: calc(50% - 60px);
+    top: -15px;
+    font-size: 1.2rem;
+    padding: 6px;
+}
+
+.plan-card--title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--negro);
+}
+.plan-card--price{
+   
+    padding: 15px 0;
+    font-size: 5.2rem;
+    font-weight: 700;
+    color: var(--negro);
+
+}
+.plan-card--price span{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    vertical-align: text-top;
+    margin-top: 8px;
+}
+.plan-card--saving{
+    font-size: 1.2rem;
+    color: var(--gris);
+    font-weight: 500;
+    height: 40px;
+}
+.plan-card--ca{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--casiBlanco);
+    border: 2px solid var(--rojoPrincipal);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--negro);
+    font-family: "DM Sans", sans-serif;
+}
+.plan-card--ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+    background-image: url('./assets/iconos/arrow.png');
+    background-size: cover;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--rojoPrincipal);
+   
+}
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+footer .left li{
+    margin: 10px 0;
+}
+footer .left a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+ footer section img{
+    width: 100px;
+    height: 70px;
+ }
